@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SJCirqueView_Example' do
+  pod 'SJCirqueView', :path => '../'
+
+  target 'SJCirqueView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
