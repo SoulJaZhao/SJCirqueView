@@ -1,0 +1,6 @@
+framework module SJCirqueView {
+  umbrella header "SJCirqueView-umbrella.h"
+
+  export *
+  module * { export * }
+}

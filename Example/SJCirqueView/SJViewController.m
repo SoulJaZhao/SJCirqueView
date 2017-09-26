@@ -7,9 +7,10 @@
 //
 
 #import "SJViewController.h"
+#import <SJCirqueView/SJCirqueView.h>
 
 @interface SJViewController ()
-
+@property (nonatomic, strong) SJCirqueView *cirqueView;
 @end
 
 @implementation SJViewController
@@ -17,7 +18,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    _cirqueView = [[SJCirqueView alloc] initWithFrame:CGRectMake(20, 20, 100, 100)
+                                         DurationTime:20.0f
+                                          StrokeColor:[UIColor blueColor]
+                                             LineWith:8.0f
+                   ];
+    
+    [self.view addSubview:_cirqueView];
 }
 
 - (void)didReceiveMemoryWarning
